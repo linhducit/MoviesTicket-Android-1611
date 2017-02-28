@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_order"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_2x"
+    android:layout_marginRight="@dimen/dimen_2x"
+    android:orientation="horizontal"
+    android:weightSum="8">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+            android:id="@+id/tv_theater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/theater"
+            android:textColor="@color/yellowDark" />
+
+        <com.pt.movieticket.widgets.textview.TextViewOpenSansLight
+            android:id="@+id/tv_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/theater"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+            android:id="@+id/tv_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movie"
+            android:textColor="@color/yellowDark" />
+
+        <com.pt.movieticket.widgets.textview.TextViewOpenSansLight
+            android:id="@+id/tv_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/theater"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+
+    <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+        android:id="@+id/tv_ticket"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="@string/ticket"
+        android:textColor="@color/yellowDark" />
+
+    <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+        android:id="@+id/tv_total"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="@string/total"
+        android:textColor="@color/yellowDark" />
+</LinearLayout>

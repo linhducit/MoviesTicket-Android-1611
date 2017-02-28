@@ -1,0 +1,155 @@
+{
+  "project_info": {
+    "project_number": "586547826194",
+    "firebase_url": "https://product-89ae3.firebaseio.com",
+    "project_id": "product-89ae3",
+    "storage_bucket": "product-89ae3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586547826194:android:0b40ee6e4a126ac1",
+        "android_client_info": {
+          "package_name": "com.pt.airbnb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586547826194-tpajpuqh9qn5c1cipeebr9h6bnkpuses.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn2ccwV-NaUbR7EOVeytBOLaiigu66pWg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586547826194-tpajpuqh9qn5c1cipeebr9h6bnkpuses.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586547826194:android:a739fae0d5eddf06",
+        "android_client_info": {
+          "package_name": "com.pt.restaurantfinder.view.activity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586547826194-tpajpuqh9qn5c1cipeebr9h6bnkpuses.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn2ccwV-NaUbR7EOVeytBOLaiigu66pWg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586547826194-tpajpuqh9qn5c1cipeebr9h6bnkpuses.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586547826194:android:3b5ac10b5fd1c8f9",
+        "android_client_info": {
+          "package_name": "com.pt.restaurantfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586547826194-tpajpuqh9qn5c1cipeebr9h6bnkpuses.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn2ccwV-NaUbR7EOVeytBOLaiigu66pWg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586547826194-tpajpuqh9qn5c1cipeebr9h6bnkpuses.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586547826194:android:77fedad4edacc3b5",
+        "android_client_info": {
+          "package_name": "com.pt.movieticket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586547826194-tpajpuqh9qn5c1cipeebr9h6bnkpuses.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn2ccwV-NaUbR7EOVeytBOLaiigu66pWg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586547826194-tpajpuqh9qn5c1cipeebr9h6bnkpuses.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

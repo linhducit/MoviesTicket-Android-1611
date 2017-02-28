@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_6x"
+        android:layout_marginRight="@dimen/dimen_6x"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white">
+
+            <EditText
+                android:id="@+id/edt_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/user_name"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/text_size_xnormal"
+                android:theme="@style/EditTextNormal" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_1x"
+            android:textColorHint="@color/white">
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="50"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/text_size_xnormal"
+                android:theme="@style/EditTextNormal" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_4x"
+        android:layout_marginLeft="@dimen/dimen_8x"
+        android:layout_marginRight="@dimen/dimen_8x"
+        android:orientation="vertical">
+
+        <com.pt.movieticket.widgets.textview.TextViewBold
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4x"
+            android:background="@drawable/bg_pressed_radius_white"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_x1x"
+            android:paddingTop="@dimen/dimen_x1x"
+            android:text="@string/login"
+            android:textAllCaps="true"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/text_size_large" />
+
+        <com.pt.movieticket.widgets.textview.TextViewBold
+            android:id="@+id/tv_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pressed_border_white"
+            android:drawableLeft="@null"
+            android:drawableStart="@null"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_x1x"
+            android:paddingTop="@dimen/dimen_x1x"
+            android:text="@string/login_facebook"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large" />
+
+        <com.pt.movieticket.widgets.textview.TextViewBold
+            android:id="@+id/tv_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2x"
+            android:background="@drawable/bg_pressed_border_white"
+            android:drawableLeft="@null"
+            android:drawableStart="@null"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_x1x"
+            android:paddingTop="@dimen/dimen_x1x"
+            android:text="@string/login_google"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large" />
+
+        <com.pt.movieticket.widgets.textview.TextViewRegular
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dimen_2x"
+            android:layout_marginTop="@dimen/dimen_1x"
+            android:text="@string/forgot_password"
+            android:textColor="@drawable/text_pressed_white_primary"
+            android:textSize="@dimen/text_size_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.pt.movieticket.widgets.textview.TextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/have_not_yet_account"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal" />
+
+            <com.pt.movieticket.widgets.textview.TextViewRegular
+                android:id="@+id/tv_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_1x"
+                android:text="@string/signup"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

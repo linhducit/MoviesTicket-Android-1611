@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:weightSum="10">
+
+            <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_2x"
+                android:text="@string/film"
+                android:textSize="@dimen/text_size_xnormal" />
+
+            <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                android:id="@+id/tv_film"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_05x"
+                android:layout_weight="6"
+                android:background="@drawable/bg_sp_film"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_2x"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_xnormal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:weightSum="10">
+
+            <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_2x"
+                android:text="@string/cinemas"
+                android:textSize="@dimen/text_size_xnormal" />
+
+            <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                android:id="@+id/tv_cinemas"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_05x"
+                android:layout_weight="6"
+                android:background="@drawable/bg_sp_film"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_2x"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_xnormal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:weightSum="10">
+
+            <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_2x"
+                android:text="@string/address"
+                android:textSize="@dimen/text_size_xnormal" />
+
+            <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                android:id="@+id/tv_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_05x"
+                android:layout_weight="6"
+                android:background="@drawable/bg_sp_film"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_2x"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_xnormal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:weightSum="10">
+
+            <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_2x"
+                android:text="@string/type"
+                android:textSize="@dimen/text_size_xnormal" />
+
+            <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                android:id="@+id/tv_type"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_05x"
+                android:layout_weight="6"
+                android:background="@drawable/bg_sp_film"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_2x"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_xnormal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:weightSum="10">
+
+            <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_2x"
+                android:text="@string/date"
+                android:textSize="@dimen/text_size_xnormal" />
+
+            <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                android:id="@+id/tv_date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_05x"
+                android:layout_weight="6"
+                android:background="@drawable/bg_sp_film"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_2x"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_xnormal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:weightSum="10">
+
+            <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_2x"
+                android:text="@string/time"
+                android:textSize="@dimen/text_size_xnormal" />
+
+            <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                android:id="@+id/tv_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_05x"
+                android:layout_weight="6"
+                android:background="@drawable/bg_sp_film"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_2x"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_xnormal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dimen_05x"
+            android:layout_weight="4.5"
+            android:background="@color/spinner_grey"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_05x">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_available" />
+
+                    <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dimen_05x"
+                        android:text="@string/available" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_taken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_taken" />
+
+                    <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dimen_05x"
+                        android:text="@string/taken" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_choosing" />
+
+                    <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="@dimen/dimen_05x"
+                        android:text="@string/choosing" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/underline_width"
+                android:layout_height="@dimen/divider_height_2dp"
+                android:layout_below="@id/ll_taken"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dimen_05x"
+                android:layout_marginLeft="@dimen/dimen_05x"
+                android:layout_marginTop="@dimen/dimen_05x"
+                android:background="@color/dividerColor" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_booking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_3x"
+                android:layout_marginTop="@dimen/dimen_05x"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+                <com.pt.movieticket.widgets.textview.TextViewOpenSansLight
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.pt.movieticket.widgets.textview.TextViewOpenSansLight
+                    android:id="@+id/ivm_number_one"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/one" />
+
+                <com.pt.movieticket.widgets.textview.TextViewOpenSansLight
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/two" />
+
+                <com.pt.movieticket.widgets.textview.TextViewOpenSansLight
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dimen_2x"
+                    android:text="@string/three" />
+
+                <com.pt.movieticket.widgets.textview.TextViewOpenSansLight
+                    android:id="@+id/ivm_number_four"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/four" />
+
+                <com.pt.movieticket.widgets.textview.TextViewOpenSansLight
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/dimen_2x"
+                    android:text="@string/five" />
+
+
+                <com.pt.movieticket.widgets.textview.TextViewOpenSansLight
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/six" />
+
+                <com.pt.movieticket.widgets.textview.TextViewOpenSansLight
+                    android:id="@+id/tv_number_seven"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/seven" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dimen_05x"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.pt.movieticket.widgets.textview.TextViewBold
+                android:id="@+id/tv_choosing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimen_2x"
+                android:text="@string/seats" />
+
+            <com.pt.movieticket.widgets.textview.TextViewBold
+                android:id="@+id/tv_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimen_8x"
+                android:text="@string/total" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_payment"
+            android:paddingBottom="@dimen/dimen_05x"
+            android:paddingLeft="@dimen/dimen_x1x"
+            android:paddingRight="@dimen/dimen_x1x"
+            android:paddingTop="@dimen/dimen_05x"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xnormal" />
+
+        <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:background="@drawable/bg_button_payment"
+            android:paddingBottom="@dimen/dimen_05x"
+            android:paddingLeft="@dimen/dimen_x1x"
+            android:paddingRight="@dimen/dimen_x1x"
+            android:paddingTop="@dimen/dimen_05x"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xnormal" />
+    </RelativeLayout>
+</RelativeLayout>

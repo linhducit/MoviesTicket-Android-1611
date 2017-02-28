@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_1x"
+        android:layout_marginTop="@dimen/dimen_5x"
+        android:src="@drawable/ic_logo_small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_3x"
+        android:paddingRight="@dimen/dimen_3x"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/dimen_x1x"
+            android:layout_marginTop="@dimen/dimen_3x"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edt_corners"
+            android:drawableLeft="@drawable/ic_email_blue"
+            android:drawablePadding="@dimen/dimen_2x"
+            android:hint="@string/email"
+            android:inputType="textNoSuggestions"
+            android:paddingLeft="@dimen/dimen_2x"
+            android:paddingRight="@dimen/dimen_1x" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/dimen_x1x"
+            android:layout_weight="2"
+            android:background="@drawable/bg_edt_card"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/edt_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_card_number"
+                android:drawablePadding="@dimen/dimen_2x"
+                android:hint="@string/card_number"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="@dimen/dimen_2x"
+                android:paddingRight="@dimen/dimen_1x" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edt_calendar_lock"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/edt_calendar"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edt_calendar"
+                    android:drawableLeft="@drawable/ic_calendar"
+                    android:drawablePadding="@dimen/dimen_x2x"
+                    android:gravity="center_vertical"
+                    android:hint="@string/calendar"
+                    android:inputType="textNoSuggestions"
+                    android:paddingLeft="@dimen/dimen_2x" />
+
+                <EditText
+                    android:id="@+id/edt_lock"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_lock_blue"
+                    android:drawablePadding="@dimen/dimen_2x"
+                    android:hint="@string/lock"
+                    android:inputType="textNoSuggestions"
+                    android:paddingLeft="@dimen/dimen_2x" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/dimen_x1x"
+            android:layout_weight="3.5"
+            android:background="@drawable/bg_edt_corners"
+            android:orientation="vertical"
+            android:weightSum="3.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <CheckBox
+                    android:id="@+id/ckb_remember"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true" />
+
+                <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                    android:id="@+id/edt_remember"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6.5"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/dimen_1x"
+                    android:text="@string/remember_me"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="|"
+                    android:textSize="@dimen/text_size_xlarge" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/ic_info" />
+            </LinearLayout>
+
+            <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/bg_textview_moblie_phone"
+                android:gravity="left"
+                android:maxLines="2"
+                android:paddingLeft="@dimen/dimen_2x"
+                android:paddingTop="@dimen/dimen_05x"
+                android:text="@string/mobile_number" />
+
+            <EditText
+                android:id="@+id/edt_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_smartphone"
+                android:drawablePadding="@dimen/dimen_2x"
+                android:gravity="center_vertical"
+                android:hint="@string/mobile"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="@dimen/dimen_2x"
+                android:paddingRight="@dimen/dimen_1x" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8" />
+
+        <com.pt.movieticket.widgets.textview.TextViewOpenSansBold
+            android:id="@+id/tv_payment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/dimen_1x"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_payment"
+            android:gravity="center"
+            android:text="@string/payment"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_xnormal" />
+    </LinearLayout>
+</LinearLayout>

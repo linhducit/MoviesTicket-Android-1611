@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rll_booking"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_2x"
+            android:gravity="center"
+            android:text="@string/info_user"
+            android:textSize="@dimen/text_size_xlarge" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="@string/name"
+                android:textSize="@dimen/text_size_xnormal" />
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@drawable/bg_sp_film"
+                android:gravity="center_vertical"
+                android:inputType="text|textNoSuggestions"
+                android:paddingLeft="@dimen/dimen_1x"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_xnormal" >
+                <requestFocus/>
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dimen_1x"
+            android:layout_weight="1">
+
+            <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="@string/email"
+                android:textSize="@dimen/text_size_xnormal" />
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@drawable/bg_sp_film"
+                android:gravity="center_vertical"
+                android:inputType="text|textNoSuggestions"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dimen_1x"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_xnormal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dimen_1x"
+            android:layout_weight="1">
+
+            <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="@string/phone"
+                android:textSize="@dimen/text_size_xnormal" />
+
+            <EditText
+                android:id="@+id/edt_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@drawable/bg_sp_film"
+                android:gravity="center_vertical"
+                android:inputType="number|textNoSuggestions"
+                android:paddingLeft="@dimen/dimen_1x"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_xnormal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dimen_1x"
+            android:layout_weight="1"
+            android:weightSum="10">
+
+            <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                android:id="@+id/textViewOpenSansRegular"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="@string/address"
+                android:textSize="@dimen/text_size_xnormal" />
+
+            <EditText
+                android:id="@+id/edt_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@drawable/bg_sp_film"
+                android:gravity="center_vertical"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="@dimen/dimen_1x"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_xnormal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dimen_1x"
+            android:layout_weight="1"
+            android:weightSum="10">
+
+            <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="@string/gender"
+                android:textSize="@dimen/text_size_xnormal" />
+
+            <RadioGroup
+                android:id="@+id/rd_gender"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd_male"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_2x"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/male" />
+
+                <RadioButton
+                    android:id="@+id/rd_female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_2x"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/female" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dimen_1x"
+            android:layout_weight="1"
+
+            >
+
+            <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="@string/pay"
+                android:textSize="@dimen/text_size_xnormal" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_05x"
+                android:layout_weight="7"
+                android:background="@drawable/bg_sp_film">
+
+                <Spinner
+                    android:id="@+id/sp_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_2x"
+                    android:src="@drawable/ic_chose" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_payment"
+            android:paddingBottom="@dimen/dimen_05x"
+            android:paddingLeft="@dimen/dimen_x1x"
+            android:paddingRight="@dimen/dimen_x1x"
+            android:paddingTop="@dimen/dimen_05x"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xnormal" />
+
+        <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@drawable/bg_button_payment"
+            android:paddingBottom="@dimen/dimen_05x"
+            android:paddingLeft="@dimen/dimen_x1x"
+            android:paddingRight="@dimen/dimen_x1x"
+            android:paddingTop="@dimen/dimen_05x"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xnormal" />
+    </RelativeLayout>
+</RelativeLayout>
+

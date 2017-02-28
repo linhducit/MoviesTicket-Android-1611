@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_1x">
+
+    <com.pt.movieticket.widgets.textview.TextViewUTMAircona
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_05x"
+        android:text="@string/rating"
+        android:textAllCaps="true"
+        android:textSize="@dimen/text_size_xlarge" />
+
+    <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/msg_confirm_rating"
+        android:textSize="@dimen/text_size_xsmall" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/ratingbar_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edt_content"
+        android:layout_width="@dimen/width_230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_05x"
+        android:background="@null"
+        android:hint="@string/comment"
+        android:inputType="textNoSuggestions"
+        android:padding="@dimen/dimen_05x"
+        android:textSize="@dimen/text_size_xnormal" />
+
+    <com.pt.movieticket.widgets.textview.TextViewUTMBitsumishiPro
+        android:id="@+id/tv_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_05x"
+        android:background="@color/red"
+        android:paddingBottom="@dimen/dimen_05x"
+        android:paddingLeft="@dimen/dimen_2x"
+        android:paddingRight="@dimen/dimen_2x"
+        android:paddingTop="@dimen/dimen_05x"
+        android:text="@string/submit"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal" />
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_05x"
+    android:layout_marginRight="@dimen/dimen_3x"
+    android:layout_marginTop="@dimen/dimen_05x"
+    android:orientation="horizontal"
+    android:weightSum="9">
+
+    <com.pt.movieticket.widgets.textview.TextViewOpenSansLight
+        android:id="@+id/tv_row_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/ivm_row_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/bg_state_chose" />
+
+    <ImageView
+        android:id="@+id/ivm_row_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/bg_state_chose" />
+
+    <ImageView
+        android:id="@+id/ivm_row_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:paddingLeft="@dimen/dimen_2x"
+        android:src="@drawable/bg_state_chose" />
+
+    <ImageView
+        android:id="@+id/ivm_row_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/bg_state_chose" />
+
+    <ImageView
+        android:id="@+id/ivm_row_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:paddingRight="@dimen/dimen_2x"
+        android:src="@drawable/bg_state_chose" />
+
+    <ImageView
+        android:id="@+id/ivm_row_6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/bg_state_chose" />
+
+    <ImageView
+        android:id="@+id/ivm_row_7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/bg_state_chose" />
+</LinearLayout>

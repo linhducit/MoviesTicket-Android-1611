@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:minWidth="@dimen/width_230dp"
+    android:padding="@dimen/dimen_1x">
+
+    <com.pt.movieticket.widgets.textview.TextViewUTMAircona
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_05x"
+        android:text="@string/cinemas"
+        android:textAllCaps="true"
+        android:textSize="@dimen/text_size_xlarge" />
+
+    <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/msg_chose_cinemas"
+        android:textSize="@dimen/text_size_normal" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/width_200dp"
+        android:layout_height="@dimen/dimen_5x"
+        android:layout_marginBottom="@dimen/dimen_1x"
+        android:layout_marginTop="@dimen/dimen_05x"
+        android:background="@color/spinner_grey">
+
+        <Spinner
+            android:id="@+id/sp_cinemas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_2x"
+            android:src="@drawable/ic_chose" />
+    </RelativeLayout>
+
+    <com.pt.movieticket.widgets.textview.TextViewUTMBitsumishiPro
+        android:id="@+id/tv_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_05x"
+        android:background="@color/red"
+        android:paddingBottom="@dimen/dimen_05x"
+        android:paddingLeft="@dimen/dimen_2x"
+        android:paddingRight="@dimen/dimen_2x"
+        android:paddingTop="@dimen/dimen_05x"
+        android:text="@string/submit"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivm_cinemas"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cinemas_height"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <com.pt.movieticket.widgets.textview.TextViewUTMAircona
+        android:id="@+id/tv_cinemas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:shadowColor="@color/red"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:paddingBottom="@dimen/dimen_1x"
+        android:textSize="@dimen/text_size_22"
+        android:textStyle="bold" />
+</android.support.v7.widget.CardView>

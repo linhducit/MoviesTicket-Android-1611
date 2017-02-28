@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_alignParentBottom="true"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_xsmall"
+        android:background="@color/text_notify_network"
+        android:text="@string/msg_network_notify"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:ellipsize="marquee"
+        android:padding="@dimen/dimen_1x"
+        android:textColor="@color/white"/>
+
+    <FrameLayout
+        android:layout_below="@+id/tv_network"
+        android:id="@+id/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include layout="@layout/_progressbar" />
+
+</RelativeLayout>

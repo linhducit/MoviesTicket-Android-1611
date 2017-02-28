@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rll_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_content"
+    android:paddingLeft="@dimen/dimen_4x"
+    android:paddingRight="@dimen/dimen_4x">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivm_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_logo" />
+
+        <EditText
+            android:id="@+id/edt_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_x1x"
+            android:background="@drawable/bg_edt_gray_light"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="@dimen/dimen_2x"
+            android:gravity="center_vertical"
+            android:hint="@string/user_name"
+            android:inputType="textNoSuggestions"
+            android:paddingBottom="@dimen/dimen_1x"
+            android:paddingLeft="@dimen/dimen_2x"
+            android:paddingTop="@dimen/dimen_1x" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginBottom="@dimen/dimen_x1x"
+            android:background="@drawable/bg_edt_gray_light"
+            >
+            <EditText
+                android:id="@+id/edt_pass_word"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawablePadding="@dimen/dimen_2x"
+                android:gravity="center_vertical"
+                android:hint="@string/password"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:paddingBottom="@dimen/dimen_1x"
+                android:paddingLeft="@dimen/dimen_2x"
+                android:paddingTop="@dimen/dimen_1x" />
+            <ImageView
+                android:id="@+id/imv_show_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_check_green"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dimen_1x"
+                />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_x1x"
+            android:background="@drawable/bg_edt_gray_light"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="@dimen/dimen_2x"
+            android:gravity="center_vertical"
+            android:hint="@string/full_name"
+            android:inputType="textNoSuggestions"
+            android:paddingBottom="@dimen/dimen_1x"
+            android:paddingLeft="@dimen/dimen_2x"
+            android:paddingTop="@dimen/dimen_1x" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_x1x"
+            android:background="@drawable/bg_edt_gray_light"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="@dimen/dimen_2x"
+            android:gravity="center_vertical"
+            android:hint="@string/email"
+            android:inputType="textNoSuggestions"
+            android:paddingBottom="@dimen/dimen_1x"
+            android:paddingLeft="@dimen/dimen_2x"
+            android:paddingTop="@dimen/dimen_1x" />
+
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_x1x"
+            android:background="@drawable/bg_edt_gray_light"
+            android:drawableLeft="@drawable/ic_phone_number"
+            android:drawablePadding="@dimen/dimen_2x"
+            android:gravity="center_vertical"
+            android:hint="@string/phone"
+            android:inputType="textNoSuggestions"
+            android:paddingBottom="@dimen/dimen_1x"
+            android:paddingLeft="@dimen/dimen_2x"
+            android:paddingTop="@dimen/dimen_1x" />
+
+        <EditText
+            android:id="@+id/edt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_x1x"
+            android:background="@drawable/bg_edt_gray_light"
+            android:drawableLeft="@drawable/ic_address"
+            android:drawablePadding="@dimen/dimen_2x"
+            android:gravity="center_vertical"
+            android:hint="@string/address"
+            android:paddingBottom="@dimen/dimen_1x"
+            android:paddingLeft="@dimen/dimen_2x"
+            android:paddingTop="@dimen/dimen_1x" />
+
+        <RadioGroup
+            android:id="@+id/rd_gender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_x1x"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rd_male"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_2x"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/rd_female"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_8x"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="@string/female" />
+
+        </RadioGroup>
+
+
+        <com.pt.movieticket.widgets.textview.TextViewOpenSansSemibold
+            android:id="@+id/tv_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_5x"
+            android:layout_marginBottom="@dimen/dimen_x1x"
+            android:background="@drawable/bg_sign_in"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/register_now"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xnormal" />
+
+    </LinearLayout>
+</RelativeLayout>

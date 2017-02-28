@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/bg_profile"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_2x"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/dimen_2x"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="@dimen/dimen_9x"
+        android:layout_height="@dimen/dimen_9x"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/dimen_2x"
+        android:src="@drawable/com_facebook_profile_picture_blank_square"
+        app:civ_border_color="@color/white" />
+
+    <com.pt.movieticket.widgets.textview.TextViewUTMAircona
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="@dimen/text_size_xlarge" />
+
+    <com.pt.movieticket.widgets.textview.TextViewUTMBitsumishiPro
+        android:id="@+id/tv_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/member"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:layout_marginTop="@dimen/textview_margin_"
+        android:shadowColor="@color/white"
+        android:textColor="@color/orange_light"
+        android:textSize="@dimen/text_size_normal" />
+</LinearLayout>

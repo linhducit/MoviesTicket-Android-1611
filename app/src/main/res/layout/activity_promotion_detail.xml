@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivm_promotion"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/product_height"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_1x">
+
+        <ImageView
+            android:id="@+id/ivm_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_2x"
+            android:src="@drawable/ic_share" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen_1x"
+            android:paddingTop="@dimen/dimen_1x">
+
+            <com.pt.movieticket.widgets.textview.TextViewUTMAircona
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/lovers_ticket"
+                android:textSize="@dimen/text_size_xlarge"
+                android:textColor="@color/yellowDark" />
+
+            <View
+                android:layout_width="@dimen/dimen_5x"
+                android:layout_height="@dimen/divider_height"
+                android:layout_gravity="center"
+                android:background="@color/yellowDark" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivm_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_2x"
+            android:src="@drawable/ic_menu" />
+    </RelativeLayout>
+
+    <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dimen_5x"
+        android:layout_marginRight="@dimen/dimen_4x"
+        android:text="@string/lovers_ticket" />
+
+</LinearLayout>

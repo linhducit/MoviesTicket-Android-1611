@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/dimen_05x">
+
+    <ImageView
+        android:id="@+id/ivm_actor"
+        android:layout_width="@dimen/dimen_6x"
+        android:layout_height="@dimen/dimen_7x"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <com.pt.movieticket.widgets.textview.TextViewOpenSansSemibold
+        android:id="@+id/tv_actor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/dimen_05x"
+        android:textSize="@dimen/text_size_xsmall" />
+</LinearLayout>
