@@ -31,7 +31,7 @@ import com.pt.movieticket.widgets.textview.TextFontConfig;
  */
 
 public class RegisterFragment extends BaseFragment implements View.OnClickListener, BaseRequest.CompleteListener, View.OnTouchListener {
-    private EditText edtUserName, edtPassword, edtEmail, edtName, edtAddress, edtPhone;
+    private EditText edtPassword, edtEmail, edtName, edtAddress, edtPhone;
     private ImageView imvShowPass;
     private TextView tvRegister;
     private ICallbackUser mICallbackUser;
@@ -68,7 +68,6 @@ public class RegisterFragment extends BaseFragment implements View.OnClickListen
 
     @Override
     protected void initView(View view) {
-        edtUserName = (EditText) view.findViewById(R.id.edt_user_name);
         edtPassword = (EditText) view.findViewById(R.id.edt_pass_word);
         edtEmail = (EditText) view.findViewById(R.id.edt_email);
         edtName = (EditText) view.findViewById(R.id.edt_name);
@@ -82,7 +81,6 @@ public class RegisterFragment extends BaseFragment implements View.OnClickListen
         viewGroup = (ViewGroup) view.findViewById(R.id.rll_register);
 
         edtEmail.setTypeface(typeface);
-        edtUserName.setTypeface(typeface);
         edtPassword.setTypeface(typeface);
 
         tvRegister.setOnClickListener(this);
@@ -97,11 +95,11 @@ public class RegisterFragment extends BaseFragment implements View.OnClickListen
         switch (check) {
             case R.id.rd_male:
                 rdMale.setChecked(true);
-                gender = "male";
+                gender = "1";
                 break;
             case R.id.rd_female:
                 rdFemale.setChecked(true);
-                gender = "female";
+                gender = "0";
                 break;
         }
         return gender;
@@ -112,18 +110,13 @@ public class RegisterFragment extends BaseFragment implements View.OnClickListen
     }
 
     public void checkRegister() {
-        String username = edtUserName.getText().toString();
         String password = edtPassword.getText().toString();
         String email = edtEmail.getText().toString();
         String address = edtAddress.getText().toString();
         String phone = edtPhone.getText().toString();
         String name = edtName.getText().toString();
         String gender = checkGender();
-        if (!StringUtil.isGoodField(username)) {
-            ((LoginActivity) self).showSnackBar(R.string.msg_username_required);
-            edtUserName.requestFocus();
-            return;
-        } else if (!StringUtil.isValidEmail(email)) {
+        if (!StringUtil.isValidEmail(email)) {
             ((LoginActivity) self).showSnackBar(R.string.msg_email_required);
             edtEmail.requestFocus();
             return;
@@ -132,7 +125,7 @@ public class RegisterFragment extends BaseFragment implements View.OnClickListen
             edtPassword.requestFocus();
             return;
         } else {
-            RequestManager.register(self, username, password, name, email, phone, address, gender, this);
+            RequestManager.register(self, email, password, name, phone, address, gender, this);
         }
     }
 

@@ -1,9 +1,7 @@
 package com.pt.movieticket.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.pt.movieticket.base.model.BaseModel;
 
-import java.util.ArrayList;
 
 /**
  * Created by TitTit on 27/12/2016.

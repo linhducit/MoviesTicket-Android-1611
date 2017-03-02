@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,7 +50,7 @@ public class ProfileFragment extends BaseFragment implements View.OnClickListene
     private ImageView ivmEdit, ivmAvatar, imvChangePass;
     private TextView tvName;
     private ViewGroup viewGroup;
-    private List<Order> mDatas;
+    private List<Order> mData;
     private RecyclerView rcvOrder;
     private OrderAdapter mOrderAdapter;
     private ChangePasswordDialog mChangePasswordDialog;
@@ -100,9 +101,11 @@ public class ProfileFragment extends BaseFragment implements View.OnClickListene
 
     @Override
     protected void getData() {
-        mDatas = new ArrayList<>();
-        mOrderAdapter = new OrderAdapter(self, mDatas);
+        mData = new ArrayList<>();
+        mOrderAdapter = new OrderAdapter(self, mData);
         rcvOrder.setAdapter(mOrderAdapter);
+        getAdapter();
+        setAdapter();
 
         RequestManager.getProfile(self, new BaseRequest.CompleteListener() {
             @Override
@@ -112,15 +115,13 @@ public class ProfileFragment extends BaseFragment implements View.OnClickListene
                     DataStoreManager.saveUser(user);
                 }
             }
+
             @Override
             public void onError(String message) {
 
             }
         });
-
-
-        getAdapter();
-        setAdapter();
+        mUser = DataStoreManager.getUser();
         if (mUser == null) {
 
         } else {
@@ -134,19 +135,19 @@ public class ProfileFragment extends BaseFragment implements View.OnClickListene
     }
 
     public void getAdapter() {
-        mDatas = new ArrayList<>();
-        mDatas.add(new Order("Anh", "Room 1", "Hương Ga", "01/01/2017", "A1-A2", "$ 20"));
-        mDatas.add(new Order("Anh", "Room 1", "Hương Ga", "01/01/2017", "A1-A2", "$ 20"));
-        mDatas.add(new Order("Anh", "Room 1", "Hương Ga", "01/01/2017", "A1-A2", "$ 20"));
-        mDatas.add(new Order("Anh", "Room 1", "Hương Ga", "01/01/2017", "A1-A2", "$ 20"));
-        mDatas.add(new Order("Anh", "Room 1", "Hương Ga", "01/01/2017", "A1-A2", "$ 20"));
-        mDatas.add(new Order("Anh", "Room 1", "Hương Ga", "01/01/2017", "A1-A2", "$ 20"));
-        mDatas.add(new Order("Anh", "Room 1", "Hương Ga", "01/01/2017", "A1-A2", "$ 20"));
+        mData = new ArrayList<>();
+        mData.add(new Order("Anh", "Room 1", "Hương Ga", "01/01/2017", "A1-A2", "$ 20"));
+        mData.add(new Order("Anh", "Room 1", "Hương Ga", "01/01/2017", "A1-A2", "$ 20"));
+        mData.add(new Order("Anh", "Room 1", "Hương Ga", "01/01/2017", "A1-A2", "$ 20"));
+        mData.add(new Order("Anh", "Room 1", "Hương Ga", "01/01/2017", "A1-A2", "$ 20"));
+        mData.add(new Order("Anh", "Room 1", "Hương Ga", "01/01/2017", "A1-A2", "$ 20"));
+        mData.add(new Order("Anh", "Room 1", "Hương Ga", "01/01/2017", "A1-A2", "$ 20"));
+        mData.add(new Order("Anh", "Room 1", "Hương Ga", "01/01/2017", "A1-A2", "$ 20"));
 
     }
 
     public void setAdapter() {
-        mOrderAdapter = new OrderAdapter(self, mDatas);
+        mOrderAdapter = new OrderAdapter(self, mData);
         rcvOrder.setAdapter(mOrderAdapter);
     }
 
@@ -170,7 +171,8 @@ public class ProfileFragment extends BaseFragment implements View.OnClickListene
                 RequestManager.upDateProfile(self, description, phone, address, new BaseRequest.CompleteListener() {
                     @Override
                     public void onSuccess(ApiResponse response) {
-                        ((MainActivity) self).showSnackBar(R.string.successfully);
+                        ((MainActivity) self).showSnackBar(R.string.msg_update_successfully);
+                        edtPassword.setText("");
                     }
 
                     @Override

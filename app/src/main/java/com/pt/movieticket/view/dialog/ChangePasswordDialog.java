@@ -15,6 +15,7 @@ import com.pt.movieticket.datastore.DataStoreManager;
 import com.pt.movieticket.network.ApiResponse;
 import com.pt.movieticket.network.BaseRequest;
 import com.pt.movieticket.network.RequestManager;
+import com.pt.movieticket.view.activity.MainActivity;
 
 
 /**
@@ -55,12 +56,13 @@ public class ChangePasswordDialog extends Dialog implements View.OnClickListener
             @Override
             public void onSuccess(ApiResponse response) {
                 DataStoreManager.savePassword(newPass);
+                ((MainActivity) mContext).showSnackBar(R.string.msg_update_successfully);
                 dismiss();
             }
 
             @Override
             public void onError(String message) {
-                Toast.makeText(mContext, "Failed", Toast.LENGTH_LONG);
+                ((MainActivity) mContext).showSnackBar(R.string.msg_update_fail);
             }
         });
     }

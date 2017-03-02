@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -109,14 +108,12 @@ public class ThreeFragment extends BaseFragment implements View.OnClickListener,
         }
     }
 
-
     @Override
     protected void getData() {
         if (mUser != null) {
             edtName.setText(mUser.getName());
             edtMail.setText(mUser.getEmail());
             gender = mUser.getGender();
-            Log.i("Tit", gender);
             if (gender.equals("female")) {
                 rdFemale.setChecked(true);
             } else {
@@ -125,7 +122,7 @@ public class ThreeFragment extends BaseFragment implements View.OnClickListener,
         }
         mData = new ArrayList<>();
         mData.add(new Cinemas("Paypal"));
-        mData.add(new Cinemas("Trực Tiếp"));
+        mData.add(new Cinemas("Delivery"));
 
         mAdapter = new ArraySpinnerAdapter(self, mData);
         spPay.setAdapter(mAdapter);
@@ -147,6 +144,7 @@ public class ThreeFragment extends BaseFragment implements View.OnClickListener,
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (Paypal.isConfirm(data)) {
+
             mICallbackBooking.finishActivity();
         }
     }

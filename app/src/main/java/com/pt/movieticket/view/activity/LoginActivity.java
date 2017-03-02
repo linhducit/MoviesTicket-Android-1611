@@ -91,7 +91,6 @@ public class LoginActivity extends BaseActivity implements FaceBookManager.ICall
         fragmentTransaction.commit();
     }
 
-
     @Override
     public void loginFacebook() {
         FaceBookManager.login(this, this);
@@ -99,27 +98,25 @@ public class LoginActivity extends BaseActivity implements FaceBookManager.ICall
 
     @Override
     public void onLoginFbSuccess(final FbUser fbUser) {
-        if (fbUser.getEmail().isEmpty() || fbUser.getEmail().equals("")) {
-            showSnackBar(R.string.msg_update_fail);
-        } else {
-            RequestManager.loginSocial(this, fbUser.getName(), fbUser.getEmail(), new BaseRequest.CompleteListener() {
-                @Override
-                public void onSuccess(ApiResponse response) {
-                    AppUtil.startActivityLTR(LoginActivity.this, MainActivity.class);
-                    DataStoreManager.saveToken(response.getToken());
-                    DataStoreManager.saveUser(new User(fbUser.getName(), fbUser.getEmail(),
-                            fbUser.getGender(), fbUser.getAvatar()));
-                    finish();
-                }
 
-                @Override
-                public void onError(String message) {
-
-                }
-            });
-
+        if (fbUser.getEmail() == null) {
+            showSnackBar(R.string.msg_no_email);
+            return;
         }
+        RequestManager.loginSocial(this, fbUser.getEmail(), new BaseRequest.CompleteListener() {
+            @Override
+            public void onSuccess(ApiResponse response) {
+                AppUtil.startActivityLTR(LoginActivity.this, MainActivity.class);
+                DataStoreManager.saveToken(response.getToken());
+                DataStoreManager.saveUser(response.getDataObject(User.class));
+                finish();
+            }
 
+            @Override
+            public void onError(String message) {
+
+            }
+        });
     }
 
     @Override

@@ -60,7 +60,7 @@
     <string name="msg_no_seat">Have you chosen your seat yet</string>
     <string name="msg_no_phone_number">This user has no phone number</string>
     <string name="msg_confirm_rating">Please enter your comment and rate this deal</string>
-    <string name="msg_choose_film">Chọn Thông Tin Của Film</string>
+    <string name="msg_chose_information_film">Chose Information For Film</string>
     <!-- msg search -->
     <string name="msg_search_required">Please enter anything you want to search</string>
     <string name="msg_no_more_data">No more data</string>
@@ -181,7 +181,7 @@
     <string name="film">Film</string>
     <string name="seats">Seats</string>
     <string name="skip">Skip</string>
-    <string name="info_user">Thông Tin User</string>
+    <string name="info_user">User Information</string>
     <string name="gender">Gender</string>
     <string name="pay">Pay</string>
     <string name="male">Male</string>

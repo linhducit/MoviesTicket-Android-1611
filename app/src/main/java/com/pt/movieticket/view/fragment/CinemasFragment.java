@@ -3,16 +3,15 @@ package com.pt.movieticket.view.fragment;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 
 import com.pt.movieticket.R;
-import com.pt.movieticket.base.view.AbstractActivity;
 import com.pt.movieticket.base.view.BaseFragment;
 import com.pt.movieticket.model.Cinemas;
 import com.pt.movieticket.network.ApiResponse;
 import com.pt.movieticket.network.BaseRequest;
 import com.pt.movieticket.network.RequestManager;
-import com.pt.movieticket.network.VolleyRequestManager;
 import com.pt.movieticket.view.adapter.CinemasAdapter;
 
 import java.util.ArrayList;
@@ -69,6 +68,7 @@ public class CinemasFragment extends BaseFragment {
                     mCinemasAdapter.notifyDataSetChanged();
                 }
             }
+
             @Override
             public void onError(String message) {
 

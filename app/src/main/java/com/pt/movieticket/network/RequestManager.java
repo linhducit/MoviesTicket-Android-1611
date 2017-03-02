@@ -2,11 +2,8 @@ package com.pt.movieticket.network;
 
 import android.content.Context;
 
-import com.google.android.gms.auth.TokenData;
-import com.google.android.gms.common.api.Api;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.pt.movieticket.configs.Apis;
-import com.pt.movieticket.datastore.DataStoreManager;
 import com.pt.movieticket.util.AppUtil;
 
 import java.util.HashMap;
@@ -58,27 +55,25 @@ public class RequestManager extends BaseRequest {
         get(Apis.URL_REGISTER_DEVICE, params, false, completeListener);
     }
 
-    public static void register(Context context, String username, String password, String name, String email,
+    public static void register(Context context,String email, String password, String name,
                                 String phone, String address, String gender, final CompleteListener completeListener) {
 
         HashMap<String, String> params = new HashMap<>();
-        params.put(PARAM_USERNAME, username);
-        params.put(PARAM_PASSWORD, password);
         params.put(PARAM_NAME, name);
         params.put(PARAM_EMAIL, email);
         params.put(PARAM_PHONE, phone);
+        params.put(PARAM_PASSWORD, password);
         params.put(PARAM_ADDRESS, address);
         params.put(PARAM_GENDER, gender);
         get(Apis.URL_REGISTER, params, completeListener);
 
     }
 
-    public static void login(Context context, String username, String password, String email, final CompleteListener completeListener) {
+    public static void login(Context context, String email, String password, final CompleteListener completeListener) {
 
         HashMap<String, String> params = new HashMap<>();
-        params.put(PARAM_USERNAME, username);
-        params.put(PARAM_PASSWORD, password);
         params.put(PARAM_EMAIL, email);
+        params.put(PARAM_PASSWORD, password);
         params.put(PARAM_IMEI, AppUtil.getIMEI(context));
         params.put(PARAM_GCM_ID, FirebaseInstanceId.getInstance().getToken());
         params.put(PARAM_TYPE, "1");
@@ -87,10 +82,9 @@ public class RequestManager extends BaseRequest {
         get(Apis.URL_LOGIN, params, completeListener);
     }
 
-    public static void loginSocial(Context context, String username, String email, final CompleteListener completeListener) {
+    public static void loginSocial(Context context, String email, final CompleteListener completeListener) {
 
         HashMap<String, String> params = new HashMap<>();
-        params.put(PARAM_USERNAME, username);
         params.put(PARAM_EMAIL, email);
         params.put(PARAM_IMEI, AppUtil.getIMEI(context));
         params.put(PARAM_GCM_ID, FirebaseInstanceId.getInstance().getToken());

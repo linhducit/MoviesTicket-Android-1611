@@ -30,7 +30,7 @@ import com.pt.movieticket.widgets.textview.TextFontConfig;
  */
 
 public class LoginFragment extends BaseFragment implements View.OnClickListener, View.OnTouchListener {
-    private EditText edtUserName, edtPassword, edtEmail;
+    private EditText edtPassword, edtEmail;
     private TextView tvForgot, tvRegister, tvStartNow, tvSignIn, tvSignFacebook;
     private ICallbackUser mICallbackUser;
     private ViewGroup viewGroup;
@@ -61,7 +61,6 @@ public class LoginFragment extends BaseFragment implements View.OnClickListener,
 
     @Override
     protected void initView(View view) {
-        edtUserName = (EditText) view.findViewById(R.id.edt_user_name);
         edtPassword = (EditText) view.findViewById(R.id.edt_password);
         edtEmail = (EditText) view.findViewById(R.id.edt_email);
 
@@ -81,7 +80,6 @@ public class LoginFragment extends BaseFragment implements View.OnClickListener,
         viewGroup.setOnTouchListener(this);
 
         Typeface typeface = Typeface.createFromAsset(self.getAssets(), TextFontConfig.FONT_OPEN_SANS_REGULAR);
-        edtUserName.setTypeface(typeface);
         edtPassword.setTypeface(typeface);
         edtEmail.setTypeface(typeface);
 
@@ -93,19 +91,14 @@ public class LoginFragment extends BaseFragment implements View.OnClickListener,
     }
 
     public void checkLogin() {
-        String username = edtUserName.getText().toString();
-        String password = edtPassword.getText().toString();
         String email = edtEmail.getText().toString();
-        if (!StringUtil.isGoodField(username)) {
-            ((LoginActivity) self).showSnackBar(R.string.msg_username_required);
-            edtUserName.requestFocus();
-            return;
-        } else if (!StringUtil.isGoodField(password)) {
+        String password = edtPassword.getText().toString();
+        if (!StringUtil.isGoodField(password)) {
             ((LoginActivity) self).showSnackBar(R.string.msg_password_not_match);
             edtPassword.requestFocus();
             return;
         } else {
-            RequestManager.login(self, username, password, email, new BaseRequest.CompleteListener() {
+            RequestManager.login(self,email, password, new BaseRequest.CompleteListener() {
                 @Override
                 public void onSuccess(ApiResponse response) {
                     AppUtil.startActivityLTR((Activity) getContext(), MainActivity.class);

@@ -14,13 +14,13 @@
         android:orientation="vertical"
         android:weightSum="10">
 
-        <com.pt.movieticket.widgets.textview.TextViewOpenSansRegular
+        <com.pt.movieticket.widgets.textview.TextViewUTMAircona
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/dimen_2x"
             android:gravity="center"
             android:text="@string/info_user"
-            android:textSize="@dimen/text_size_xlarge" />
+            android:textSize="@dimen/text_size_25" />
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -52,7 +52,7 @@
             android:layout_height="0dp"
             android:layout_weight="1.5"
             android:gravity="center"
-            android:text="@string/msg_choose_film"
+            android:text="@string/msg_chose_information_film"
             android:textSize="@dimen/text_size_large" />
 
         <LinearLayout
